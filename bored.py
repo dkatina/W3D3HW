@@ -1,6 +1,3 @@
-from re import S
-from urllib import response
-from webbrowser import get
 import requests
 from colorama import Fore, Style, init
 from random import choice
