@@ -73,8 +73,8 @@ def pokemon_appears():
 def get_activity():
     print_yellow("**Please note it is hard to find activities when the minimum is greater than $100**")
     while True:
-        min = input("\nWhat would you like your minimum price range to be?: ")
-        max = input("\nWhat would you like your maximum price range to be?: ")
+        min = input("\nWhat would you like your minimum price range to be?: $").strip()
+        max = input("\nWhat would you like your maximum price range to be?: $").strip()
         if not min.isdigit() or not max.isdigit():
             print_yellow("One of your range entries was not a integer please only enter whole numbers")
             continue
